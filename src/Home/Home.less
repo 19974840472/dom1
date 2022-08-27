@@ -1,0 +1,78 @@
+.homeStyle{
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  &>div{
+    width: 200px;
+    text-align: center;
+    &>div:first-child{
+      margin-bottom: 20px;
+    }
+    &>div:last-child{
+      height: 500px;
+      &>ul{
+        padding: 20px;
+        li{
+          input{
+            text-align: center;
+          }
+          p{
+            background-color: #fff;
+            padding: 2px;
+            border: 1px solid #000;
+            margin-bottom: 5px;
+            position: relative;
+            button{
+              position: absolute;
+              width: 16px;
+              height:16px;
+              border-radius: 50%;
+              top: -7px;
+              right: -7px;
+              border: 0;
+            }
+          }
+        }
+      }
+      &>button{
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 50%;
+        border: 1px solid;
+      }
+
+    }
+    &>.borderRed{
+      border: 2px solid red;
+    }
+    &>.borderGreen{
+      border: 2px solid green;
+    }
+  }
+  &>div:first-child{
+    &>div:first-child{
+      background-color: pink;
+    }
+    &>div:last-child{
+      background-color: pink;
+    }
+  }
+  &>div:nth-child(2){
+    &>div:first-child{
+      background-color: green;
+    }
+    &>div:last-child{
+      background-color: green;
+    }
+  }
+  &>div:last-child{
+    &>div:first-child{
+      background-color: #ccc;
+    }
+    &>div:last-child{
+      background-color: #ccc;
+    }
+  }
+
+}
